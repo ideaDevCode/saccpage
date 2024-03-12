@@ -1,0 +1,246 @@
+.about {
+  border: 1px solid black;
+  margin-block: 20px;
+  width: 80%;
+  margin-inline: auto;
+  padding-block: 50px;
+  border-radius: 5px;
+  padding-inline: 30px;
+}
+
+.about > div > p {
+  width: 60%;
+  padding-block: 30px;
+  line-height: 30px;
+}
+
+.about > div > ul {
+  width: 60%;
+  padding-inline: 20px;
+  padding-block: 30px;
+  line-height: 30px;
+}
+
+.about > div .galery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(22rem, 100%), 1fr));
+  place-content: center;
+  gap: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.about > div .galery > .card-img {
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center;
+  > img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid black;
+  }
+  > h4 {
+    padding-block: 10px 0px;
+    padding-inline: 20px;
+  }
+  > p {
+    padding-block: 0px 10px;
+    padding-inline: 20px;
+  }
+}
+
+.container {
+  padding-block: 20px;
+  width: 80%;
+  margin: auto;
+  height: 60vh;
+  display: grid;
+  place-content: center;
+}
+
+.first-section {
+  width: 80vw;
+  height: 500px;
+  border: 1px solid red;
+  margin: auto;
+}
+
+.section1 > img {
+  display: block;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.section1 > .content {
+  text-align: center;
+  /* border-top: 1px solid #070707; */
+}
+
+.section1 > .content > .content-title {
+  padding-block: 40px;
+  /* border-bottom: 1px solid #070707; */
+}
+
+.section1 > .content > .grid-2 {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+}
+
+.section1 > .content > .grid-2 > div:first-child {
+  border-right: 1px solid #070707;
+  padding-block: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.section1 > .content > .grid-2 > div:nth-child(2) {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 20px;
+  gap: 10px;
+}
+
+.grid-1 {
+  text-align: center;
+  border-top: 1px solid #070707;
+  padding-block: 30px;
+}
+
+.grid-1 > div {
+  /* border-top: 1px solid black; */
+  padding-block: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid-1 > div > img {
+    width: 120px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+h1,h2,h3,h4,h5,h6,strong,b,a,button {
+  font-family: inter-bold;
+}
+
+header {
+  border-bottom: 1px solid #000000;
+}
+
+header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+  gap: 20px;
+  padding: 20px 50px;
+  background-color: #ffffff;
+}
+
+header > nav > a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000;
+}
+
+header > nav > ul {
+  list-style: none;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 30px;
+}
+
+header > nav > button {
+  cursor: pointer;
+  padding-inline: 15px;
+  padding-block: 5px;
+  background-color: transparent;
+  border: 2px solid #86198F;
+  border-radius: 5px;
+  color: #86198F;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+header > nav > button:hover {
+  padding-inline: 15px;
+  padding-block: 5px;
+  border-radius: 5px;
+  background-color: #86198F;
+  border: 2px solid #070707;
+  color: #fcfcfc;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+  transition: all 0.5s;
+}
+
+
+header > nav > ul > li > a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #333232;
+  transition: all 0.5s;
+}
+
+
+
+@media (max-width: 480px) {
+  header {
+    border-bottom: 1px solid #000000;
+  }
+  
+  header > nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid red;
+    background-color: #ffffff;
+  }
+  
+  header > nav > a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+  }
+  
+  header > nav > ul {
+    list-style: none;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 30px;
+  }
+
+  header > nav > ul > li > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    transition: all 0.5s;
+  }
+  
+  header > nav > ul > li > a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #333232;
+    transition: all 0.5s;
+  }
+}

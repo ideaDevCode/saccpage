@@ -1,0 +1,38 @@
+[
+    {
+        "id": "FREESACC",
+        "name": "Gratis",
+        "price": "0",
+        "description": "Este plan te permite agregar hasta 50 clientes",
+        "container": {
+            "customers": "50",
+            "users": "1",
+            "support": "",
+            "updates": false
+        }
+    },
+    {
+        "id": "STANSACC",
+        "name": "Standar",
+        "price": "300",
+        "description": "Este plan te permite agregar hasta 300 clientes",
+        "container": {
+            "customers": "300",
+            "users": "3",
+            "support": "",
+            "updates": true
+        }
+    },
+    {
+        "id": "ENTESACC",
+        "name": "Empresarial",
+        "price": "500",
+        "description": "Este plan te permite agregar hasta 500 clientes",
+        "container": {
+            "customers": "500",
+            "users": "10",
+            "support": "",
+            "updates": true
+        }
+    }
+]
