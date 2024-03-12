@@ -1,0 +1,64 @@
+:root {
+    --cod-gray-50: #f5f5f6;
+    --cod-gray-100: #e5e5e8;
+    --cod-gray-200: #ceced3;
+    --cod-gray-300: #acadb4;
+    --cod-gray-400: #83858d;
+    --cod-gray-500: #686a72;
+    --cod-gray-600: #595a61;
+    --cod-gray-700: #4c4d52;
+    --cod-gray-800: #434347;
+    --cod-gray-900: #3b3b3e;
+    --cod-gray-950: #202020;
+    --cod-gray-1000: #0c0c0d;
+
+    --turbo-50: #fcfde9;
+    --turbo-100: #f6fbc6;
+    --turbo-200: #f3f890;
+    --turbo-300: #f2f450;
+    --turbo-400: #eee71b;
+    --turbo-500: #dfcf13;
+    --turbo-600: #c0a40e;
+    --turbo-700: #99780f;
+    --turbo-800: #7f5f14;
+    --turbo-900: #6c4d17;
+    --turbo-950: #3f2909;
+}
+
+@keyframes aparecer {
+    0% {
+        /* margin-top: 60px; */
+        opacity: 0;
+    }
+
+    100% {
+        /* margin-top: 40px; */
+        opacity: 1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    font-family: 'Bricolage Grotesque Variable', sans-serif;
+    /* font-family: 'Archivo Variable', sans-serif; */
+    /* font-family: 'Work Sans Variable', sans-serif; */
+    /* font-family: 'Inter Tight Variable', sans-serif; */
+}
+
+
+code {
+    font-family: 'Inconsolata Variable', monospace;
+}
+
+

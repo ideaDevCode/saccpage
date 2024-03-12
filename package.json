@@ -10,11 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource-variable/archivo": "^5.0.17",
+    "@fontsource-variable/bricolage-grotesque": "^5.0.4",
+    "@fontsource-variable/hanken-grotesk": "^5.0.19",
+    "@fontsource-variable/inconsolata": "^5.0.17",
+    "@fontsource-variable/inter-tight": "^5.0.19",
+    "@fontsource-variable/work-sans": "^5.0.17",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.0"
+    "react-router-dom": "^6.20.0",
+    "style-components": "^0.1.0",
+    "styled-components": "^6.1.8"
   },
-  "homepage": "https://sacc.isisinternet.com",
+  "homepage": "https://sistemasacc.com",
   "devDependencies": {
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
