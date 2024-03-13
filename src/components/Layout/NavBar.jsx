@@ -105,7 +105,7 @@ export default function NavBar() {
             <nav>
                 <Logo>
                     <NavLink to="/" style={{ display: 'flex', alignItems: 'center', gap: '2px' }}>
-                        {/* <img src={sacc} alt="sacc.png" style={{ width: '40px', marginInlineEnd: '5px'}}/> */}
+                        {/* <img loading="lazy" src={sacc} alt="sacc.png" style={{ width: '40px', marginInlineEnd: '5px'}}/> */}
                         <Brand>SACC</Brand>
                     </NavLink>
                 </Logo>
