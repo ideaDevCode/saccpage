@@ -1,7 +1,7 @@
 import { lazy } from "react";
 
 const Introduccion = lazy(() => import("../components/Manual/Introduccion/Introduccion"));
-const Configuracion = lazy(() => import("../components/Manual/Configuracion/Configuracion"));
+const Configuracion = lazy(() => import("../Pages/Manual/Configuracion/Configuracion"));
 const Requirement = lazy(() => import("../components/Manual/Requirement/Requirement"));
 const Instalation = lazy(() => import("../components/Manual/Instalation/Instalation"));
 const PingApplication = lazy(() => import("../components/Manual/PingApplication/PingApplication"));
