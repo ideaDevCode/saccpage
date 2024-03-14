@@ -175,10 +175,6 @@ export const DisplayFourth = styled.h4`
    }
 `;
 
-
-
-
-
 export const Lead = styled.p`
     width: ${({ width }) => width };
     margin-inline: ${({ align }) => align == "center" && `auto`};
@@ -267,6 +263,14 @@ export const GroupButtons = styled.div`
         gap: 10px;
         margin-block: 30px 0px;
     }
+`;
+
+export const DarkBadge = styled.span`
+    background: black;
+    color: white;
+    padding: 2.5px 10px;
+    border-radius: 10px;
+    font-size: 12px;
 `;
 
 export const Badge = styled.p`
@@ -372,8 +376,8 @@ export const Icon = styled.div`
 export const Card = styled.div`
     width: ${({ width }) => width };
     margin-block: 40px 0px;
-    border: 1px solid var(--cod-gray-100);
-    box-shadow: 0px 5px 20px var(--cod-gray-50);
+    border: 1px solid var(--cod-gray-500);
+    box-shadow: 0px 5px 10px var(--cod-gray-50);
     border-radius: 25px;
     overflow: hidden;
     margin-inline: ${({ inline }) => inline || 'auto'};
@@ -390,7 +394,7 @@ export const Card = styled.div`
 `;
 
 export const CardHeader = styled.div`
-    border-bottom: 1px solid var(--cod-gray-50);
+    border-bottom: 1px solid var(--cod-gray-500);
     padding-block: 15px;
     padding-inline: 20px;
     display: flex;
@@ -407,7 +411,7 @@ export const Control = styled.div`
     width: 10px;
     height: 10px;
     border-radius: 25px;
-    background: gray;
+    background: var(--cod-gray-800);
 `;
 
 export const CardBody = styled.div`
@@ -421,7 +425,7 @@ export const CardBody = styled.div`
 `;
 
 export const CardFooter = styled.div`
-    border-top: 1px solid var(--cod-gray-50);
+    border-top: 1px solid var(--cod-gray-500);
     padding-block: 15px;
     padding-inline: 20px;
     display: flex;
@@ -487,5 +491,37 @@ export const Code = styled.div`
         border: 1px solid var(--cod-gray-50);
         cursor: pointer;
         font-size: 10px;
+    }
+`;
+
+
+export const GridTemplates = styled.div`
+    width: 100%;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+    place-content: start;
+    margin-block: 50px 0px;
+    gap: 50px;
+
+    @media(width <= 1440px) {
+        width: 100%;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+        place-content: start;
+        margin-block: 50px 0px;
+        gap: 50px;
+    }
+
+    @media(width <= 450px) {
+        width: 90%;
+        height: 100%;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+        place-content: start center;
+        margin-block: 50px 0px;
+        gap: 30px;
     }
 `;

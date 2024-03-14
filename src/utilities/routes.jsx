@@ -1,12 +1,13 @@
 import { lazy } from "react";
 
-const Introduccion = lazy(() => import("../components/Manual/Introduccion/Introduccion"));
+const Introduccion = lazy(() => import("../Pages/Manual/Introduccion/Introduccion"));
+const Comenzar = lazy(() => import("../Pages/Manual/Comenzar/Comenzar"));
+const Requirement = lazy(() => import("../Pages/Manual/Requirement/Requirement"));
+const Instalation = lazy(() => import("../Pages/Manual/Instalation/Instalation"));
+const PingApplication = lazy(() => import("../Pages/Manual/PingApplication/PingApplication"));
+const WhatsappAPI = lazy(() => import("../Pages/Manual/WhatsappAPI/WhatsappAPI"));
+const StartServices = lazy(() => import("../Pages/Manual/StartServices/StartServices"));
 const Configuracion = lazy(() => import("../Pages/Manual/Configuracion/Configuracion"));
-const Requirement = lazy(() => import("../components/Manual/Requirement/Requirement"));
-const Instalation = lazy(() => import("../components/Manual/Instalation/Instalation"));
-const PingApplication = lazy(() => import("../components/Manual/PingApplication/PingApplication"));
-const WhatsappAPI = lazy(() => import("../components/Manual/WhatsappAPI/WhatsappAPI"));
-const StartServices = lazy(() => import("../components/Manual/StartServices/StartServices"));
 
 export const routes = [
     {
@@ -62,12 +63,12 @@ export const routes = [
     {
         name: "Comenzar",
         path: "comenzar",
-        // componentName: 'Comenzar',
+        componentName: <Comenzar/>,
     },
     {
         name: "Configuracion",
         path: "configuracion",
-        componentName: <Configuracion/>,
+        // componentName: <Configuracion/>,
     },
     {
         name: "Mensajeria",

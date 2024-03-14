@@ -45,6 +45,8 @@ const Lead = styled.p`
 export default function HireServices() {
     return <Container>
         <Outlet/> 
+        <br />
+        <br />
         <Title>Completa la información para registrarte</Title>
         <Lead>¿Necesitas ayuda? <Link to="tel:9371413479">Llamanos.</Link></Lead>
         <br />
