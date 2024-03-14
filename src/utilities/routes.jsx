@@ -1,4 +1,5 @@
 import { lazy } from "react";
+
 const Introduccion = lazy(() => import("../Pages/Manual/Introduccion/Introduccion"));
 const Comenzar = lazy(() => import("../Pages/Manual/Comenzar/Comenzar"));
 const Requirement = lazy(() => import("../Pages/Manual/Requirement/Requirement"));
@@ -6,6 +7,7 @@ const Instalation = lazy(() => import("../Pages/Manual/Instalation/Instalation")
 const PingApplication = lazy(() => import("../Pages/Manual/PingApplication/PingApplication"));
 const WhatsappAPI = lazy(() => import("../Pages/Manual/WhatsappAPI/WhatsappAPI"));
 const StartServices = lazy(() => import("../Pages/Manual/StartServices/StartServices"));
+const Configuracion = lazy(() => import("../Pages/Manual/Configuracion/Configuracion"));
 
 export const routes = [
     {
