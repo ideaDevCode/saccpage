@@ -10,7 +10,7 @@ export default function Configuracion() {
     return <>
         <DisplayThree>Configuraciones</DisplayThree>
         <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ratione omnis qui quod libero facilis repudiandae tempora quam vitae laborum est consequatur reprehenderit harum in non, minima quidem alias distinctio!
+            Si tu sistema ya fue unstalado por el técnico de manera exitosa entonces ya puedes comenzar a configurar tu entorno.
             <CardPicture>
                 <img loading="lazy" src={sacc} alt="sacc.png" />
             </CardPicture>
