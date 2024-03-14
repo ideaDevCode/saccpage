@@ -1,5 +1,3 @@
-import styled from "styled-components";
-import Title from "./Description/Title";
 import Cards from "./Description/Content";
 import { DisplayTwo, Article } from "../../components/Styled/Styled";
 
