@@ -22,7 +22,7 @@ export default function Activations() {
                 </Lead>
             </Article>
             <GridFour image={image} setImage={setImage}/>
-            <CardPicture width="80%">
+            <CardPicture width="50%">
                 <img loading="lazy" src={image} style={{ width: '100%' }}/>
             </CardPicture>
         </div>
