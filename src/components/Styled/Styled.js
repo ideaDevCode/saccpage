@@ -122,7 +122,7 @@ export const DisplayTwo = styled.h2`
 `;
 
 export const DisplayThree = styled.h3`
-    width: ${({ width }) => width };
+    width: ${({ width }) => width ? width : "50%" };
     font-size: 1.5rem;
     line-height: 1.5rem;
     margin-inline: auto;
@@ -268,7 +268,7 @@ export const GroupButtons = styled.div`
 export const DarkBadge = styled.span`
     background: black;
     color: white;
-    padding: 2.5px 10px;
+    padding: 4px 15px;
     border-radius: 10px;
     font-size: 12px;
 `;
@@ -376,7 +376,7 @@ export const Icon = styled.div`
 export const Card = styled.div`
     width: ${({ width }) => width };
     margin-block: 40px 0px;
-    border: 1px solid var(--cod-gray-500);
+    border: 1px solid var(--cod-gray-200);
     box-shadow: 0px 5px 10px var(--cod-gray-50);
     border-radius: 25px;
     overflow: hidden;
@@ -394,7 +394,7 @@ export const Card = styled.div`
 `;
 
 export const CardHeader = styled.div`
-    border-bottom: 1px solid var(--cod-gray-500);
+    border-bottom: 1px solid var(--cod-gray-200);
     padding-block: 15px;
     padding-inline: 20px;
     display: flex;
@@ -417,15 +417,11 @@ export const Control = styled.div`
 export const CardBody = styled.div`
     padding-block: 5px;
     padding-inline: ${({ inline }) => inline || '5px' };
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
-    gap: 5px;
+    padding-block: ${({ inline }) => inline || '5px' };
 `;
 
 export const CardFooter = styled.div`
-    border-top: 1px solid var(--cod-gray-500);
+    border-top: 1px solid var(--cod-gray-200);
     padding-block: 15px;
     padding-inline: 20px;
     display: flex;
@@ -439,27 +435,12 @@ export const CardFooter = styled.div`
 `;
 
 export const ContentInput = styled.div`
+    width: 90%;
     margin-block: 10px 0px;
     
     & label {
         font-weight: 500;
         font-size: 14px;
-    }
-`;
-
-export const TextField = styled.input`
-    border: 1px solid var(--cod-gray-600);
-    padding: 15px 20px;
-    margin-block: 5px;
-    width: 100%;
-    outline: none;
-    border-radius: 10px;
-    border: 1px solid var(--cod-gray-100);
-    background-color: transparent;
-    &:focus {
-        border: 1px solid var(--cod-gray-100);
-        background-color: #F8FAFC;
-        color: var(--cod-gray-1000);
     }
 `;
 
@@ -523,5 +504,37 @@ export const GridTemplates = styled.div`
         place-content: start center;
         margin-block: 50px 0px;
         gap: 30px;
+    }
+`;
+
+
+// Formulario
+export const Formulary = styled.form`
+    width: ${({ width }) => width || '30%'};
+    margin-inline: auto;
+    margin-block: 150px;
+
+    @media(width <= 1440px) {
+        width: ${({ width }) => width || '40%'};
+        margin-inline: auto;
+        margin-block: 150px;
+    }
+
+    @media(width <= 450px) {
+        width: 80%;
+        margin-inline: auto;
+        margin-block: 100px;
+    }
+`;
+
+export const Double = styled.div`
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: ${ ({ gap }) => gap || '50px' };
+
+    & div {
+        flex: 1;
     }
 `;

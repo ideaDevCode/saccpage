@@ -1,6 +1,6 @@
 import {Card, CardBody, CardFooter, CardHeader, Control } from "../Styled/Styled";
 
-export default function CardPicture({ children, width }) {
+export default function CardPicture({ children, width, inline }) {
     return (
         <Card width={width}>
             <CardHeader>
@@ -8,7 +8,7 @@ export default function CardPicture({ children, width }) {
                 <Control/>
                 <Control/>
             </CardHeader>
-            <CardBody>{children}</CardBody>
+            <CardBody inline={inline}>{children}</CardBody>
             <CardFooter>
                 <Control/>
                 <Control/>

@@ -38,7 +38,7 @@ const Aside = styled.aside`
     }
 
     @media(width <= 450px) {
-        margin-left: -100vw;
+        display: none;
     }
 `;
 
@@ -81,6 +81,10 @@ const AsideCollapse = styled.div`
 const Content = styled.section`
     width: 50%;
     padding: 100px 30px;
+
+    @media(width <= 450px) {
+        width: 90%;
+    }
 `;
 
 const AsideContainer = styled.div`

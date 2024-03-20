@@ -13,7 +13,7 @@ export default function Presentation() {
                     Administra tus clientes de forma inteligente y haz que tu negocio rinda mucho más.
                 </Lead>
                 <GroupButtons>
-                    <LinkPrimaryButton target="/hire-services" text='Comenzar'/>
+                    <LinkPrimaryButton target="/hire-services/FREESACC" text='Comenzar'/>
                     <LinkLightButton target="/manual" text='Documentación'/>
                 </GroupButtons>
             </FlexLeft>
