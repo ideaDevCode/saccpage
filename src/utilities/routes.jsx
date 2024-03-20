@@ -8,6 +8,8 @@ const PingApplication = lazy(() => import("../Pages/Manual/PingApplication/PingA
 const WhatsappAPI = lazy(() => import("../Pages/Manual/WhatsappAPI/WhatsappAPI"));
 const StartServices = lazy(() => import("../Pages/Manual/StartServices/StartServices"));
 const Configuracion = lazy(() => import("../Pages/Manual/Configuracion/Configuracion"));
+const Mensajeria = lazy(() => import("../Pages/Manual/Mensajeria/Mensajeria"));
+const Paquetes = lazy(() => import("../Pages/Manual/Paquetes/Paquetes"));
 
 export const routes = [
     {
@@ -68,34 +70,34 @@ export const routes = [
     {
         name: "Configuracion",
         path: "configuracion",
-        // componentName: <Configuracion/>,
+        componentName: <Configuracion/>,
     },
     {
         name: "Mensajeria",
         path: "mensajeria",
-        // componentName: 'Mensajeria',
+        componentName: <Mensajeria/>,
     },
     {
         name: "Paquetes",
         path: "paquetes",
-        // componentName: 'Paquetes',
-        subroutes: [
-            {
-                name: "Agregar",
-                path: "agregar",
-                // componentName: 'Agregar',
-            },
-            {
-                name: "Editar",
-                path: "editar",
-                // componentName: 'Editar',
-            },
-            {
-                name: "Eliminar",
-                path: "eliminar",
-                // componentName: 'Eliminar',
-            },
-        ]
+        componentName: <Paquetes/>,
+        // subroutes: [
+        //     {
+        //         name: "Agregar",
+        //         path: "agregar",
+        //         // componentName: 'Agregar',
+        //     },
+        //     {
+        //         name: "Editar",
+        //         path: "editar",
+        //         // componentName: 'Editar',
+        //     },
+        //     {
+        //         name: "Eliminar",
+        //         path: "eliminar",
+        //         // componentName: 'Eliminar',
+        //     },
+        // ]
     },
     {
         name: "Antenas",
